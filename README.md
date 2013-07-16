@@ -6,7 +6,7 @@ Main languages are JavaScript,
 [Handlebars](http://handlebarsjs.com/).
 
 ## Getting started
-* Create new project via executing `brunch new <project name> --skeleton https://github.com/nezoomie/brunch-with-marionette.git` option for the command.
+* Create new project via executing `brunch new <project name> --skeleton https://github.com/nezoomie/brunch-with-marionette-js.git` option for the command.
 * Build the project with `brunch b` or `brunch w`.
 * Open the `public/` dir to see the result.
 * Write your code.
