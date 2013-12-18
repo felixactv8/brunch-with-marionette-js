@@ -32,12 +32,14 @@ exports.config =
 
     stylesheets:
       defaultExtension: 'styl'
-      joinTo: 'stylesheets/app.css'
+      joinTo:
+        'stylesheets/app.css': /^app/
+        'stylesheets/vendor.css': /^vendor/
       order:
         before: [
-          'vendor/styles/bootstrap.css'
-          'vendor/styles/bootstrap-body.css'
-          'vendor/styles/bootstrap-responsive.css'
+          'vendor/styles/bootstrap.styl'
+          'vendor/styles/bootstrap-theme.styl'
+          'vendor/font-awesome.css'          
         ]
         after: []
 
