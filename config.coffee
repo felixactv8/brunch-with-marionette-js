@@ -1,5 +1,14 @@
+production = process.env.ENV is 'production'
+testing = process.env.ENV is 'testing'
+publicFolder = process.env.PUBLIC_PATH || 'public'
+
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
+  optimize: Boolean production
+  
+  paths:
+    public: publicFolder  
+  
   files:
     javascripts:
       defaultExtension: 'coffee'
@@ -35,3 +44,10 @@ exports.config =
     templates:
       defaultExtension: 'hbs'
       joinTo: 'javascripts/app.js'
+      
+  plugins:
+    uglify:
+      mangle: false
+      compress:
+        global_defs:
+          DEBUG: false      
