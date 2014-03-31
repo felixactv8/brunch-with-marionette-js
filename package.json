@@ -1,7 +1,7 @@
 {
-  "author": "Simeon Bateman",
+  "author": "Felix Montanez",
   "name": "Brunch-With-Marionette",
-  "description": "MarionetteJS application template for Brunch.io",
+  "description": "MarionetteJS application template for Brunch.io. Original template is copyright Simeon Bateman 2013. Distributed under MIT license",
   "version": "0.0.1",
   "homepage": "",
   "repository": {
